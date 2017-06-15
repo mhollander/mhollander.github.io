@@ -1,0 +1,111 @@
+.pure-g > div {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+		background-clip:content-box;
+		padding: .1em;
+}
+
+.l-box {
+        padding: .1em;
+}
+
+.header {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: .1em;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+.header > h1 {
+	font-weight: 100;
+	margin: 0;
+	font-size: 320%
+}
+
+.header > h2 {
+	font-weight: 100;
+	line-height: 1.5;
+	margin: 0;
+	letter-spacing: -0.02em;
+	font-size: 200%;
+}
+
+.content {
+	max-width: 610px;
+	margin: 0 auto;
+}
+
+.year-parent {
+	position:relative;
+	width: 300px;
+}
+
+.year {
+	margin: auto;
+	display: block;
+}
+
+.year-link:link, .year-link:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.year-link:hover, .year-link:active {
+	background-color: lightblue;
+	text-decoration: none;
+}
+.year-parent:hover .year {
+  animation: .3s fadeIn;
+  animation-fill-mode: forwards;
+  opacity: .2;
+  -webkit-transition: opacity .5s;
+}
+
+.year-parent:focus .year {
+  animation: .5s fadeIn;
+  animation-fill-mode: forwards;
+  opacity: .2;
+  -webkit-transition: opacity .5s;
+
+}
+	
+.year-parent:hover .year-text {
+  animation: .3s fadeIn;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  -webkit-transition: opacity .5s; 
+
+  /*
+	visibility: visible;
+*/
+}
+
+.year-parent:focus .year-text {
+  animation: .5s fadeIn;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  -webkit-transition: opacity .5s; 
+
+}
+
+
+.year-text {
+	position:absolute; 
+	top: 0px;
+	left: 30px;
+	font-size: 140%;
+	font-weight: bold;
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+}
+
+@keyframes fadeIn {
+  60% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
