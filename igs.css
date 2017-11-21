@@ -16,20 +16,19 @@
 	padding: .1em;
 	text-align: center;
 	letter-spacing: 0.05em;
+	font-family: garamond, arial;
 }
 
 .header > h1 {
-	font-weight: 100;
+	font-weight: bold;
 	margin: 0;
-	font-size: 320%
+	font-size: 400%;
 }
 
 .header > h2 {
 	font-weight: 100;
-	line-height: 1.5;
 	margin: 0;
-	letter-spacing: -0.02em;
-	font-size: 200%;
+	font-size: 280%;
 }
 
 .content {
